@@ -1,0 +1,10 @@
+<h3>Lista wszystich drużyn</h3>
+<div *ngIf="teams">
+  <ul>
+    <li *ngFor="let team of teams">
+      <span>{{team.name}}</span>
+      <span>&nbsp;({{team.code}})</span>
+      <img src={{team.crestURL}} height="20px"/>      
+    </li>
+  </ul>
+</div>
